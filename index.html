@@ -6,44 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Portfolio, Mateusz Podolak, front-end developer">
-    <meta name="keywords" content="mateusz, podolak, mateusz podolak, podolak mateusz, junior, developer, front-end, front-end junior developer, websites, design, web design, web developer">
     <title>Mateusz Podolak - Front-end Developer Responsive Portfolio</title>
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
         crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mediaqueries.css">
+    <link rel="stylesheet" href="css/normalize.css">
 </head>
 
 <body>
     <header class="header">
-
-        <div class="hamburger-icon">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-
-        <nav class="menu">
-            <ul class="nav">
-                <li class="list-element">
-                    <a href="#home" class="link current">Home</a>
+        <nav class="nav-collapse" role="navigation">
+            <ul class="tabs primary-nav">
+                <li class="tabs__item">
+                    <a href="#home" class="tabs__link">Home</a>
                 </li>
-                <li class="list-element">
-                    <a href="#about" class="link">About Me</a>
+                <li class="tabs__item">
+                    <a href="#about" class="tabs__link">About Me</a>
                 </li>
-                <li class="list-element">
-                    <a href="#skills" class="link">Skills</a>
+                <li class="tabs__item">
+                    <a href="#skills" class="tabs__link">Skills</a>
                 </li>
-                <li class="list-element">
-                    <a href="#certificates" class="link">Certificates</a>
+                <li class="tabs__item">
+                    <a href="#portfolio" class="tabs__link">Portfolio</a>
                 </li>
-                <li class="list-element">
-                    <a href="#portfolio" class="link">Portfolio</a>
-                </li>
-                <li class="list-element">
-                    <a href="#contact" class="link">Contact</a>
+                <li class="tabs__item">
+                    <a href="#contact" class="tabs__link">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -61,28 +48,26 @@
             <p class="text-color-blue ">Hi!
                 <span id="text-typing-animation"></span>
             </p>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/podolakmateusz1994" target="_blank">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/mateusz-podolak/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/podolakmateusz" target="_blank">
-                    <i class="fab fa-github-square"></i>
-                </a>
-            </div>
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/podolakmateusz1994" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a></li>
+                <li> <a href="https://www.linkedin.com/in/mateusz-podolak/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a></li>
+                <li> <a href="https://github.com/podolakmateusz" target="_blank">
+                        <i class="fab fa-github-square"></i>
+                    </a></li>
+            </ul>
         </section>
 
         <section class="about" id="about">
-            <div class="section-title">
-                <h4>About Me</h4>
-            </div>
 
-            <div class="left-column"></div>
+            <h1 class="section-title">About Me</h1>
 
-            <div class="right-column">
-                <div class="right-column-text-box">
+
+            <div class="about-container">
+                <div class="about-container-text-box">
                     <h2>HELLO <span class="text-color-blue">WORLD!</span></h2>
                     <p>My name is <span class="text-color-blue">Mateusz Podolak</span> and I want to be a Junior
                         Front-End Developer. I'm <span class="text-color-blue">24 years old</span>. I've started
@@ -97,37 +82,30 @@
                         by clicking the button below.</p>
 
                     <div class="buttons-container">
-                        <a href="#portfolio"><button class="btn">
-                                <i class="fas fa-eye"></i>
-                                Check out my works!
-                            </button>
+                        <a href="#portfolio">
+                            <i class="fas fa-eye"></i>
+                            Check out my works!
                         </a>
                         <a href="https://1drv.ms/b/s!Aqi-AbQAl-4og9gRnqn1acAXQnKNKQ" target="_blank">
-                            <button class="btn">
-                                <i class="fas fa-download"></i>
-                                Download my CV
-                            </button>
+                            <i class="fas fa-download"></i>
+                            Download my CV
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="clear"></div>
         </section>
 
         <section class="skills" id="skills">
-            <div class="section-title">
-                <h4>Skills</h4>
-            </div>
+            <h1 class="section-title">Skills</h1>
 
             <div class="icons-container">
+
+                <h2>I KNOW AND I USE </h2>
 
                 <div class="icon-box">
                     <div class="icon">
                         <i class="fab fa-html5"></i>
                         <p class="icon-title">HTML5</p>
-                    </div>
-                    <div class="icon-description">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;Good knowledge.
                     </div>
                 </div>
 
@@ -136,38 +114,12 @@
                         <i class="fab fa-css3-alt"></i>
                         <p class="icon-title">CSS3</p>
                     </div>
-                    <div class="icon-description">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;Good knowledge.
-                    </div>
                 </div>
 
                 <div class="icon-box">
                     <div class="icon">
-                        <i class="fab fa-sass"></i>
-                        <p class="icon-title">Sass</p>
-                    </div>
-                    <div class="icon-description">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Learning.
-                    </div>
-                </div>
-
-                <div class="icon-box">
-                    <div class="icon">
-                        <i class="fab fa-js"></i>
-                        <p class="icon-title">JS</p>
-                    </div>
-                    <div class="icon-description">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Basic knowledge.
-                    </div>
-                </div>
-
-                <div class="icon-box">
-                    <div class="icon">
-                        <img src="./img/jquery.svg">
-                        <p class="icon-title">jQuery</p>
-                    </div>
-                    <div class="icon-description">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Laerning.
+                        <i class="fas fa-tablet-alt"></i>
+                        <p class="icon-title">RWD</p>
                     </div>
                 </div>
 
@@ -176,180 +128,51 @@
                         <img src="./img/bootstrap.svg">
                         <p class="icon-title">Bootstrap</p>
                     </div>
-                    <div class="icon-description">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Basic knowledge.
+                </div>
+
+                <h2> I HAVE A BASIC KNOWLEDGE AND I'M CONSTANTLY LEARNING</h2>
+
+                <div class="icon-box">
+                    <div class="icon">
+                        <i class="fab fa-sass"></i>
+                        <p class="icon-title">Sass</p>
                     </div>
                 </div>
+
+                <div class="icon-box">
+                    <div class="icon">
+                        <i class="fab fa-js"></i>
+                        <p class="icon-title">JS</p>
+                    </div>
+                </div>
+
+                <div class="icon-box">
+                    <div class="icon">
+                        <img src="./img/jquery.svg">
+                        <p class="icon-title">jQuery</p>
+                    </div>
+                </div>
+
 
                 <div class="icon-box">
                     <div class="icon">
                         <i class="fab fa-git-square"></i>
                         <p class="icon-title">Git</p>
                     </div>
-                    <div class="icon-description">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Average knowledge.
-                    </div>
                 </div>
 
-                <div class="icon-box">
-                    <div class="icon">
-                        <i class="fas fa-tablet-alt"></i>
-                        <p class="icon-title">RWD</p>
-                    </div>
-                    <div class="icon-description">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Good knowledge.
-                    </div>
-                </div>
+
             </div>
-        </section>
-
-        <section class="certificates" id="certificates">
-            <div class="section-title">
-                <h4>Certificates</h4>
-            </div>
-
-            <div class="slider-container">
-                <figure class="slider-box slider-img-box">
-                    <button id="previous" class="slider-button"><i class="fas fa-chevron-circle-left"></i></button>
-
-                    <ul class="slider-img-list">
-
-                        <li class="img-item slide-change-animation"><img src='img/certificates/html_css.jpg' class='slider-img'
-                                alt="dyplom"></li>
-
-                        <li class="img-item slide-change-animation "><img src='img/certificates/c_programming.jpg'
-                                class='slider-img' alt="dyplom"></li>
-
-                        <li class="img-item slide-change-animation"><img src='img/certificates/novel_suse.jpg' class='slider-img'
-                                alt="dyplom"></li>
-
-                        <li class="img-item slide-change-animation"><img src='img/certificates/ccna_introduction_to_networks.jpg'
-                                class='slider-img' alt="dyplom"></li>
-
-                        <li class="img-item slide-change-animation"><img src='img/certificates/ccna_routing_and_switching_essentials.jpg'
-                                class='slider-img' alt="dyplom"></li>
-
-                        <li class="img-item slide-change-animation"><img src='img/certificates/ccna_scaling_networks.jpg'
-                                class='slider-img' alt="dyplom"></li>
-
-                        <li class="img-item slide-change-animation"><img src='img/certificates/ccna_connecting_networks.jpg'
-                                class='slider-img' alt="dyplom"></li>
-
-                        <li class="img-item slide-change-animation"><img src='img/certificates/computer_support.jpg'
-                                class='slider-img' alt="dyplom"></li>
-                    </ul>
-
-                    <button id="next" class="slider-button"><i class="fas fa-chevron-circle-right"></i></button>
-                </figure>
-
-                <article class="slider-box slider-article-box">
-                    <ul class="slider-article-list">
-                        <li class="article-item slide-change-animation">
-                            <h3 class="article-title">HTML and CSS Course from scratch</h3>
-                            <p class="article-description">An online course covering topics such as syntax, basics, new
-                                standards, semantics and the most interesting properties of HTML5 and CSS3 languages.
-                                The course is available at eduweb.pl</p>
-                            <span class="obtainment-date">16 April 2018</span>
-                        </li>
-                        <li class="article-item slide-change-animation">
-                            <h3 class="article-title">Programming school in C</h3>
-                            <p class="article-description">An online course with a basic knowledge of C-language
-                                programming. The course is available at strefakursów.pl.
-                            </p>
-                            <span class="obtainment-date">23 January 2017</span>
-                        </li>
-                        <li class="article-item slide-change-animation">
-                            <h3 class="article-title">SUSE Linux Enterprise Server 11 Administration (Course 3102)</h3>
-                            <p class="article-description">SUSE Linux Enterprise Server 11 training covering basic
-                                knowledge of the Linux system and issues such as: installation and file management in
-                                Linux, practical knowledge of administrative tasks implemented on the local computer,
-                                user and data administration, network configuration, data backup and recovery, printer
-                                operation.
-                            </p>
-                            <span class="obtainment-date">16 June 2015</span>
-                        </li>
-                        <li class="article-item slide-change-animation">
-                            <h3 class="article-title">CCNA Routing and Switching: Introduction to Networks</h3>
-                            <p class="article-description">CCNA 1 course involving topics like: <br />
-                                || Exploring the Network ||
-                                Configuring a Network Operating System ||
-                                Network Protocols and Communications ||
-                                Network Access ||
-                                Ethernet ||
-                                Network Layer ||
-                                Transport Layer ||
-                                IP Addressing ||
-                                Subnetting IP Networks ||
-                                Application Layer ||</p>
-                            <span class="obtainment-date">29 October 2017</span>
-                        </li>
-                        <li class="article-item slide-change-animation">
-                            <h3 class="article-title">CCNA Routing and Switching: Routing and Switching Essentials</h3>
-                            <p class="article-description">CCNA 2 course involving topics like: <br />
-                                || Introduction to Switched Networks ||
-                                Basic Switching Concepts and Configuration ||
-                                Implementing VLAN Security ||
-                                Routing Concepts ||
-                                Inter-VLAN Routing ||
-                                Static Routing ||
-                                Routing Dynamically ||
-                                Single-Area OSPF ||
-                                Access Control Lists ||
-                                DHCP ||
-                                Network Address Translation for IPv4 ||</p>
-                            <span class="obtainment-date">29 October 2017</span>
-                        </li>
-                        <li class="article-item slide-change-animation">
-                            <h3 class="article-title">CCNA Routing and Switching: Scaling Networks</h3>
-                            <p class="article-description">CCNA 3 course involving topics like: <br />
-                                || Growing the Network ||
-                                LAN Redundancy ||
-                                Link Aggregation ||
-                                Wireless ||
-                                Adjust and Troubleshoot Single-Area OSPF ||
-                                Multiarea OSPF ||
-                                EIGRP ||
-                                Adjust and Troubleshoot EIGRP ||
-                                IOS File Management ||</p>
-                            <span class="obtainment-date">13 June 2018</span>
-                        </li>
-                        <li class="article-item slide-change-animation">
-                            <h3 class="article-title">CCNA Routing and Switching: Connecting Networks</h3>
-                            <p class="article-description">CCNA 3 course involving topics like: <br />
-                                || Hierarchical Network Design ||
-                                Connecting to the WAN ||
-                                Point-to-Point Connections ||
-                                Frame Relay ||
-                                Network Address Translation for IPv4 ||
-                                Broadband Solutions ||
-                                Securing Site-to-Site Connectivity ||
-                                Monitoring the Network ||
-                                Troubleshoot the Network ||</p>
-                            <span class="obtainment-date">13 June 2018</span>
-                        </li>
-                        <li class="article-item slide-change-animation">
-                            <h3 class="article-title">Computer and office equipment support</h3>
-                            <p class="article-description">Online course about multi-function device support and Apache
-                                OpenOffice software support, include OpenOffice Writer and OpenOffice Calc</p>
-                            <span class="obtainment-date">1 October 2017</span>
-                        </li>
-                    </ul>
-                </article>
-            </div>
-
         </section>
 
         <section class="portfolio" id="portfolio">
-            <div class="section-title">
-                <h4>My Projects</h4>
-            </div>
+            <h1 class="section-title">My Projects</h1>
 
             <div id="buttons-container">
                 <button class="btn active" onclick="filterType('all')"> Show all</button>
                 <button class="btn" onclick="filterType('website')"> Websites</button>
                 <button class="btn" onclick="filterType('psd_html')"> PSD to HTML</button>
                 <button class="btn" onclick="filterType('js_app')"> JS App</button>
-                <button class="btn" onclick="filterType('bootstrap')"> Bootstrap</button>
             </div>
 
             <div class="portfolio-container">
@@ -431,7 +254,7 @@
                             <h2>Example page #2 <br /> Fast-Food Website</h2>
                             <p>Second created website. Site modelled on site from challange: "Show world your site -
                                 challange with Videopoint" <br />
-                                https://bedeprogramistka.pl/pokaz-sie-swiatu-wyzwanie-z-videopoint/ <br /> Used
+                                <br /> Used
                                 technologies: HTML, CSS and jQuery for mobile menu.</p>
                             <div class="buttons-container">
                                 <a href="https://podolakmateusz.github.io/fast-food-website/" target="_blank">
@@ -439,10 +262,10 @@
                                         <i class="fas fa-eye"></i>
                                     </button>
                                 </a>
-                                <a href="https://github.com/podolakmateusz/fast-food-website" target="_blank"></a>
-                                <button class="btn">
-                                    <i class="fas fa-code"></i>
-                                </button>
+                                <a href="https://github.com/podolakmateusz/fast-food-website" target="_blank">
+                                    <button class="btn">
+                                        <i class="fas fa-code"></i>
+                                    </button>
                                 </a>
                             </div>
                         </div>
@@ -473,101 +296,39 @@
                     </div>
                 </div>
 
-                <div class="project-box js_app'">
-                    <div class="content">
-                        <img src="" alt="Coming Soon" style="width:100%">
-                        <div class="project-description">
-                            <h2>Coming Soon</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis nibh
-                                turpis, ut posuere lectus finibus vitae.</p>
-                            <div class="buttons-container">
-                                <a href="" target="_blank">
-                                    <button class="btn">
-                                        <i class="fas fa-eye"></i>
-                                    </button>
-                                </a>
-                                <a href="" target="_blank">
-                                    <button class="btn">
-                                        <i class="fas fa-code"></i>
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-box bootstrap">
-                    <div class="content">
-                        <img src="" alt="Coming Soon" style="width:100%">
-                        <div class="project-description">
-                            <h2>Coming Soon</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis nibh
-                                turpis, ut posuere lectus finibus vitae.</p>
-                            <div class="buttons-container">
-                                <a href="" target="_blank">
-                                    <button class="btn">
-                                        <i class="fas fa-eye"></i>
-                                    </button>
-                                </a>
-                                <a href="" target="_blank">
-                                    <button class="btn">
-                                        <i class="fas fa-code"></i>
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-box psd_html">
-                    <div class="content">
-                        <img src="" alt="Coming Soon" style="width:100%">
-                        <div class="project-description">
-                            <h2>Coming Soon</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis nibh
-                                turpis, ut posuere lectus finibus vitae.</p>
-                            <div class="buttons-container">
-                                <a href="" target="_blank">
-                                    <button class="btn">
-                                        <i class="fas fa-eye"></i>
-                                    </button>
-                                </a>
-                                <a href="" target="_blank">
-                                    <button class="btn">
-                                        <i class="fas fa-code"></i>
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
             </div>
         </section>
 
         <section class="contact" id="contact">
-            <div class="section-title">
-                <h4>Contact</h4>
-            </div>
+            <h1 class="section-title">Contact</h1>
 
             <div class="contact-container">
 
                 <div class="left-column">
                     <form action="https://formspree.io/podolakmateusz@outlook.com" method="POST">
                         <div class="inputWithIcon">
-                            <input type="text" name="name" placeholder="Your Name" required>
-                            <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+                            <label>
+                                <input type="text" name="name" placeholder="Your Name" required>
+                                <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+                            </label>
                         </div>
                         <div class="inputWithIcon">
-                            <input type="email" name="email" placeholder="Address Email" required>
-                            <i class="fas fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
+                            <label>
+                                <input type="email" name="email" placeholder="Address Email" required>
+                                <i class="fas fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
+                            </label>
                         </div>
                         <div class="inputWithIcon">
-                            <input type="tel number" placeholder="Phone number" required>
-                            <i class="fas fa-phone fa-lg fa-fw" aria-hidden="true"></i>
+                            <label>
+                                <input type="tel number" placeholder="Phone number" required>
+                                <i class="fas fa-phone fa-lg fa-fw" aria-hidden="true"></i>
+                            </label>
                         </div>
                         <div class="inputWithIcon">
-                            <textarea placeholder="Type your message..." name="message"></textarea>
+                            <label>
+                                <textarea class="textarea" placeholder="Type your message..." name="message"></textarea>
+                            </label>
                         </div>
                         <input type="submit" value="Send Email" class="submit-button">
                     </form>
@@ -575,18 +336,18 @@
 
                 <div class="right-column">
 
-                    <ul class="contact-details">
-                        <div class="contact-details-item"><i class="fa fa-map-marker-alt fa-2x"></i><span class="contact-text location">RZESZÓW
-                                | PL</span></div>
+                    <address class="contact-details">
+                        <dl class="contact-details-item"><i class="fa fa-map-marker-alt fa-2x"></i><span class="contact-text location">RZESZÓW
+                                | PL</span></dl>
 
-                        <div class="contact-details-item"><i class="fa fa-phone fa-2x"></i><span class="contact-text phone"><a
+                        <dl class="contact-details-item"><i class="fa fa-phone fa-2x"></i><span class="contact-text phone"><a
                                     href="tel:1-212-555-5555" title="Give me a call">(+48) 660-325-568</a></span>
-                        </div>
+                        </dl>
 
-                        <div class="contact-details-item"><i class="fa fa-envelope fa-2x"></i><span class="contact-text mail"><a
+                        <dl class="contact-details-item"><i class="fa fa-envelope fa-2x"></i><span class="contact-text mail"><a
                                     href="mailto:#" title="Send me an email">podolakmateusz@outlook.com</a></span>
-                        </div>
-                    </ul>
+                        </dl>
+                    </address>
 
                     <hr>
 
@@ -624,11 +385,11 @@
 
                 </div>
             </div>
+
         </section>
 
     </main>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/responsive-nav.js/1.0.32/responsive-nav.min.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/textTyping.js"></script>
     <script src="js/slider.js"></script>
