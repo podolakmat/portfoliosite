@@ -1,6 +1,6 @@
 var textAnimation = document.querySelector("#text-typing-animation");
 
-var texts = ["Szukam pracy w Rzeszowie ", "Znam HTML, CSS, JS i RWD ", "Więcej o mnie niżej ⬇️"];
+var texts = ["Szukasz pracownika? ", "Szukam pracy w Rzeszowie ", "Znam HTML, CSS, JS i RWD ", "Więcej o mnie? ⬇️"];
 
 var x;
 var y = 0;
