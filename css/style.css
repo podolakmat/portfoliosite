@@ -221,10 +221,10 @@ body {
     transform: translateY(-240px);
   }
   87.5% {
-    transform: translateY(-280px);
+    transform: translateY(-240px);
   }
   100% {
-    transform: translateY(-280px);
+    transform: translateY(-240px);
   }
 }
 @keyframes blink {
