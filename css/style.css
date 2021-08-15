@@ -109,7 +109,7 @@ body {
   width: 40px;
   height: 40px;
   line-height: 40px;
-  animation: slider 8s ease-in infinite;
+  animation: slider 15s ease-in infinite;
 }
 .loader .text span {
   display: block;
